@@ -186,6 +186,29 @@ main > section{
 
 /* our-sponsers end */
 
+/* footer style */
+
+.footer-page{
+  max-width: 1440px;
+  margin:0 auto;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 130px;
+  background-color: #FFF4E7;
+  border-radius: 50px;
+  
+}
+.footer-title{
+  /* font-weight: 700; */
+  font-size: 2rem;
+ 
+  
+}
+
+
+/* footer style end */
+
 /* responsip media query*/
 
 @media screen and (max-width: 576px){
@@ -212,9 +235,16 @@ main > section{
   .sponser-img{
     justify-items: center;
     gap: 50px;
+}
 
-}
-}
+  .footer-page{
+    justify-content: center;
+      
+    }
+
+ }
+
+
 /* medium devics */
 @media screen and (min-width: 576px) and (max-width: 992px){
   .teams{
