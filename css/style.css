@@ -164,6 +164,27 @@ main > section{
 }
 
 /* some Facts end */
+/* our-sponsers */
+
+.sponser-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponser-title{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.sponser-description{
+  font-size: 1.25rem;
+
+}
+.sponser-img{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+/* our-sponsers end */
 
 /* responsip media query*/
 
@@ -175,13 +196,24 @@ main > section{
     align-items: center;
   }
 
-  .team-img{
+  .team-img,
+  .Facts-container,
+  .sponser-img{
     grid-template-columns: repeat(1, 1fr);
   }
   .our-features{
     margin-left: 20px;
   }
+  .Facts-container{
+    justify-items: center;
+    gap: 24px;
 
+  }
+  .sponser-img{
+    justify-items: center;
+    gap: 50px;
+
+}
 }
 /* medium devics */
 @media screen and (min-width: 576px) and (max-width: 992px){
@@ -191,4 +223,11 @@ main > section{
   .our-features{
     margin-left: 50px auto;
   }
+  .sponser-img, .Facts-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    justify-items: center;
+
+  
+}
 }
